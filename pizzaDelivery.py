@@ -21,5 +21,7 @@ elif size == "L":    #pizza grande
         bill += 3
         if extra_cheese == "S": #dico si al formaggio extra
             bill += 1
+else:
+    print("Hai digitato male la misura")
 
 print(f"La pizza costa {bill} euro")
