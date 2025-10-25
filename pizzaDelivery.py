@@ -5,23 +5,21 @@ extra_cheese = input("Vuoi del formaggio extra? S o N: ")
 
 bill = 0
 
-if size == "S": #pizza piccola
-    bill = 15
-    if pepperoni == "S": #dico si al salame in più
-        bill += 2
-        if extra_cheese == "S":  #dico si al formaggio extra
-            bill += 1
-elif size == "M":  #pizza media
-    bill = 20
-    if pepperoni == "S": #dico si al salame in più
-        bill += 3
-elif size == "L":    #pizza grande
-    bill = 25
-    if pepperoni == "S": #dico si al salame in più
-        bill += 3
-        if extra_cheese == "S": #dico si al formaggio extra
-            bill += 1
+if size == "S":
+    bill += 15
+elif size == "M":
+    bill += 20
 else:
-    print("Hai digitato male la misura")
+    bill += 25
 
-print(f"La pizza costa {bill} euro")
+if pepperoni == "S":
+    if size == "S":
+        bill += 2
+    else:
+        bill += 3
+
+if extra_cheese == "S":
+    bill += 1
+
+
+print (f"La tua pizza costa {bill} euro")
