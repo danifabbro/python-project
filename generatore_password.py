@@ -5,9 +5,9 @@ simboli = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
 
 print("Benvenuto nel mio generatore di password!")
 
-nr_lettere = int(input("Quante lettere vuoi nella tua password?/n"))
-nr_numeri = int(input("Quanti numeri vuoi nella tua password?/n"))
-nr_simboli = int(input("Quanti simboli vuoi nella tua password?/n"))
+nr_lettere = int(input("Quante lettere vuoi nella tua password? Scegli da 1 a 51 lettere!"))
+nr_numeri = int(input("Quanti numeri vuoi nella tua password? Scegli da 1 a 10 numeri!"))
+nr_simboli = int(input("Quanti simboli vuoi nella tua password? Scegli da 1 a 9 simboli! "))
 
 password_array = []
 
